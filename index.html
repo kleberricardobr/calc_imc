@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="legend">
+            <div class="legend--text">IMC</div>
+            <div class="legend--hr"></div>
+        </div>
+        <h1>Cálculo IMC</h1>
+        <div class="inputs">           
+            <div class="input">
+                <label for="peso">Peso</label> 
+                <input type="number" id="peso" autocomplete="off">
+            </div>            
+            <div class="input">
+                <label for="altura">Altura</label> 
+                <input type="number" id="altura" autocomplete="off">
+            </div>
+            <button id="calcular">Calcular</button>            
+        </div>        
+        <h2 id="message">Informe todos os campos</h2>
+        <div class="result">
+            <div class="result--item" id="abaixo">
+                <h2>&lt18,5</h2>
+                <h3>Baixo Peso</h3>
+            </div>
+            <div class="result--item" id="normal">
+                <h2>18,5 - 24,9</h2>
+                <h3>Peso Normal</h3>
+            </div>
+            <div class="result--item" id="excesso">
+                <h2> 25 - 29,9</h2>
+                <h3>Excesso de Peso</h3>
+            </div>
+            <div class="result--item" id="obeso">
+                <h2> &gt30 </h2>
+                <h3>Obesidade</h3>
+            </div>
+            <div class="result--item" id="extremo">
+                <h2> &gt35</h2>
+                <h3>Obesidade Extrema</h3>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/javascript/index.js"></script>
+</body>
+</html>
